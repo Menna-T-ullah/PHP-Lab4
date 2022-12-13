@@ -83,7 +83,8 @@ if($link->query($sql) === TRUE){
    }
 
 }
+header('location: details.php');
 }
-
+unset($_POST);
 mysqli_close($link);
 ?>
